@@ -132,7 +132,7 @@
 
 - (void)shakeView:(UITextField*)textField
 {
-    CAPropertyAnimation *animation = [self shakeHorizontalAnimation];
+    CAPropertyAnimation *animation = [self shakeFrontBackAnimation];
     [textField.layer addAnimation:animation forKey:nil];
 }
 
