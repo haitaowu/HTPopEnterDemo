@@ -13,6 +13,8 @@
 		BEFB6A0A1D5B0FD7007A49C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFB6A081D5B0FD7007A49C6 /* Main.storyboard */; };
 		BEFB6A0C1D5B0FD7007A49C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFB6A0B1D5B0FD7007A49C6 /* Assets.xcassets */; };
 		BEFB6A0F1D5B0FD7007A49C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFB6A0D1D5B0FD7007A49C6 /* LaunchScreen.storyboard */; };
+		BEFB6A1B1D5B0FF0007A49C6 /* HTInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB6A181D5B0FF0007A49C6 /* HTInputField.m */; };
+		BEFB6A1C1D5B0FF0007A49C6 /* HTInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB6A1A1D5B0FF0007A49C6 /* HTInputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		BEFB6A0B1D5B0FD7007A49C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEFB6A0E1D5B0FD7007A49C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEFB6A101D5B0FD7007A49C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFB6A171D5B0FF0007A49C6 /* HTInputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTInputField.h; sourceTree = "<group>"; };
+		BEFB6A181D5B0FF0007A49C6 /* HTInputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTInputField.m; sourceTree = "<group>"; };
+		BEFB6A191D5B0FF0007A49C6 /* HTInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTInputView.h; sourceTree = "<group>"; };
+		BEFB6A1A1D5B0FF0007A49C6 /* HTInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTInputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		BEFB69FE1D5B0FD7007A49C6 /* HTPopEnterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BEFB6A161D5B0FF0007A49C6 /* HTPopInputView */,
 				BEFB6A021D5B0FD7007A49C6 /* AppDelegate.h */,
 				BEFB6A031D5B0FD7007A49C6 /* AppDelegate.m */,
 				BEFB6A051D5B0FD7007A49C6 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				BEFB6A001D5B0FD7007A49C6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEFB6A161D5B0FF0007A49C6 /* HTPopInputView */ = {
+			isa = PBXGroup;
+			children = (
+				BEFB6A171D5B0FF0007A49C6 /* HTInputField.h */,
+				BEFB6A181D5B0FF0007A49C6 /* HTInputField.m */,
+				BEFB6A191D5B0FF0007A49C6 /* HTInputView.h */,
+				BEFB6A1A1D5B0FF0007A49C6 /* HTInputView.m */,
+			);
+			path = HTPopInputView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFB6A1C1D5B0FF0007A49C6 /* HTInputView.m in Sources */,
 				BEFB6A071D5B0FD7007A49C6 /* ViewController.m in Sources */,
+				BEFB6A1B1D5B0FF0007A49C6 /* HTInputField.m in Sources */,
 				BEFB6A041D5B0FD7007A49C6 /* AppDelegate.m in Sources */,
 				BEFB6A011D5B0FD7007A49C6 /* main.m in Sources */,
 			);
