@@ -241,7 +241,7 @@
     }];
 }
 
-- (void)hiddenPopView
+- (void)dismissPopView
 {
     [self endEditing:YES];
     [UIView animateWithDuration:0.8 animations:^{
@@ -259,7 +259,7 @@
     if (self.doneBlock != nil) {
         NSMutableArray *contents = [self inputContents];
         if (contents != nil) {
-            [self hiddenPopView];
+            [self dismissPopView];
             self.doneBlock(contents);
         }
     }
@@ -267,7 +267,7 @@
 
 - (void)tapoverlayerView
 {
-    [self hiddenPopView];
+    [self dismissPopView];
     if (self.cancelBlock != nil) {
         self.cancelBlock();
     }
